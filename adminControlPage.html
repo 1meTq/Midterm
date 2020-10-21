@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="import" href="head.html">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: black">
+    <a class="navbar-brand" href="#" style="padding-left: 150px;"><h3 style="color: whitesmoke">
+        <strong>BalykBank</strong></h3></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="padding-left: 550px"><h5 style="color: whitesmoke"></h5></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="home.html" style="padding-left: 100px"><h5 style="color: whitesmoke">
+                    Logout</h5></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="row mt-4" style="padding-left: 70px">
+
+                <!--1 column-->
+                <div class="col-sm-4">
+
+                    <div>
+                        <div class="row mt-3">
+                            <div class="col">
+
+                                <img src="images/anon.jpg" style="width: 250px; height: 250px">
+
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-sm-9">
+                                <div class="list-group">
+                                    <a class="list-group-item list-group-item-action"><strong>Admin</strong></a>
+                                    <a href="adminProfile.html" class="list-group-item list-group-item-action"
+                                       style="color: #3d2ef6">Profile</a>
+                                    <a href="adminControlPage.html" class="list-group-item list-group-item-action"
+                                       style="color: #3d2ef6">Admin panel</a>
+                                    <a href="home.html" class="list-group-item list-group-item-action"
+                                       style="color: #f60c26">Logout</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--2 column-->
+                <div class="col-sm-8">
+                    <div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <div class="form-inline my-2 my-lg-0">
+                                    <a class="btn btn-primary" href="adminControlPage.html" role="button"
+                                       data-toggle="modal" data-target="#exampleModal">+Add new
+                                        Client</a><h6
+                                        style="width: 20px"></h6>
+                                    <input class="form-control mr-sm-2" type="search" placeholder="Search"
+                                           aria-label="Search">
+                                </div>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Add new user</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+
+
+                                                <label>
+                                                    <h5>Full Name</h5>
+                                                </label>
+                                                <input class="form-control" type="text" name="full_name">
+                                                <label>
+                                                    <h6 style="color: gray">Input your full name</h6>
+                                                </label>
+                                                <br>
+                                                <label>
+                                                    <h5>IIN</h5>
+                                                </label>
+                                                <input class="form-control" type="number" name="email">
+                                                <label>
+                                                    <h6 style="color: gray">Input your email</h6>
+                                                </label>
+                                                <br>
+
+                                                <label>
+                                                    <h5>Bank card</h5>
+                                                </label>
+                                                <input class="form-control" type="number" name="email">
+                                                <label>
+                                                    <h6 style="color: gray">Input your email</h6>
+                                                </label>
+                                                <br>
+
+                                                <label>
+                                                    <h5>IBAN</h5>
+                                                </label>
+                                                <input class="form-control" type="number" name="email">
+                                                <label>
+                                                    <h6 style="color: gray">Input your email</h6>
+                                                </label>
+                                                <br>
+
+
+                                                <label>
+                                                    <h5>Birthdate</h5>
+                                                </label>
+                                                <input class="form-control" type="date" name="birth_date">
+                                                <label>
+                                                    <h6 style="color: gray">Input your birthdate</h6>
+                                                </label>
+                                                <br>
+
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Close
+                                                </button>
+                                                <button type="button" class="btn btn-primary">Add
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <table>
+                            <tr>
+                                <th style="width: 80px">
+                                    <label>
+                                        ID
+                                    </label>
+                                </th>
+
+                                <th style="width: 150px">
+                                    <label>
+                                        NAME
+                                    </label>
+                                </th>
+
+                                <th style="width: 150px">
+                                    <label>
+                                        SURNAME
+                                    </label>
+                                </th>
+
+                                <th style="width: 150px">
+                                    <label>
+                                        BIRTHDATE
+                                    </label>
+                                </th>
+
+                                <th style="width: 150px">
+                                    <label>
+                                        DETAILS
+                                    </label>
+                                </th>
+                            </tr>
+                        </table>
+                        <hr>
+
+                        <table>
+                            <tr>
+                                <td style="width: 80px">
+                                    <label>
+                                        1
+                                    </label>
+                                </td>
+
+                                <td style="width: 150px">
+                                    <label>
+                                        userName
+                                    </label>
+                                </td>
+
+                                <td style="width: 150px">
+                                    <label>
+                                        userSurname
+                                    </label>
+                                </td>
+
+                                <td style="width: 150px">
+                                    <label>
+                                        userBirthdate
+                                    </label>
+                                </td>
+
+                                <td style="width: 150px">
+                                    <a class="btn btn-secondary" href="details.html" style="width: 100px"
+                                       role="button">DETAILS</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+
+                                <td style="width: 80px">
+                                    <label>
+                                        2
+                                    </label>
+                                </td>
+
+                                <td style="width: 150px">
+                                    <label>
+                                        userName2
+                                    </label>
+                                </td>
+
+                                <td style="width: 150px">
+                                    <label>
+                                        userSurname2
+                                    </label>
+                                </td>
+
+                                <td style="width: 150px">
+                                    <label>
+                                        userBirthdate2
+                                    </label>
+                                </td>
+
+                                <td style="width: 150px">
+                                    <a class="btn btn-secondary" href="details.html" style="width: 100px"
+                                       role="button">DETAILS</a>
+                                </td>
+
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+
+<div>
+
+</div>
+
+<div>
+
+</div>
+
+<br>
+<footer class="page-footer font-small pt-5">
+    <div class="footer-copyright text-center py-3" style="color: whitesmoke;background-color: black">© 2020 Copyright:
+        <a href="https://mdbootstrap.com/"> balykbank.com</a>
+    </div>
+</footer>
+
+</body>
+</html>

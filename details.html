@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="import" href="head.html">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: black">
+    <a class="navbar-brand" href="#" style="padding-left: 150px;"><h3 style="color: whitesmoke">
+        <strong>BalykBank</strong></h3></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="padding-left: 550px"><h5 style="color: whitesmoke"></h5></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="home.html" style="padding-left: 100px"><h5 style="color: whitesmoke">
+                    Logout</h5></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="row mt-4" style="padding-left: 70px">
+
+                <!--1 column-->
+                <div class="col-sm-4">
+
+                    <div>
+                        <div class="row mt-3">
+                            <div class="col">
+
+                                <img src="images/anon.jpg" style="width: 250px; height: 250px">
+
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-sm-9">
+                                <div class="list-group">
+                                    <a class="list-group-item list-group-item-action"><strong>Admin</strong></a>
+                                    <a href="adminProfile.html" class="list-group-item list-group-item-action"
+                                       style="color: #3d2ef6">Profile</a>
+                                    <a href="adminControlPage.html" class="list-group-item list-group-item-action"
+                                       style="color: #3d2ef6">Admin panel</a>
+                                    <a href="home.html" class="list-group-item list-group-item-action"
+                                       style="color: #f60c26">Logout</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--2 column-->
+                <div class="col-sm-8">
+                    <div class="row mt-3">
+                        <div class="col">
+
+                            <div>
+                                <img src="images/abay.jpg" style="width: 100px; height: 100px">
+                                <label>Full name:<h3>Kunanbayev Abay</h3> </label>
+                            </div>
+                            <br>
+                            <div>
+                                <label><h4>Birthdate: 06.09.2000</h4></label>
+                            </div>
+
+                            <div>
+                                <label><h4>IIN: 000 906 500 721</h4></label>
+                            </div>
+
+                            <div>
+                                <label><h4>Bank: Balyk Bank</h4></label>
+                            </div>
+
+                            <div>
+                                <label><h4>Bank card: 1234 4567 7890 123</h4></label>
+                            </div>
+
+                            <div>
+                                <label><h4>IBAN: KZ291123987645984</h4></label>
+                            </div>
+
+                            <div>
+                                <label><h4>Address: <a href="#">Abay 150, block 4</a></h4></label>
+                            </div>
+
+                            <div>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                    UPDATE
+                                </button>
+
+                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal2">
+                                    DELETE
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Edit profile</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+
+                                                <label>
+                                                    <h5>Full Name</h5>
+                                                </label>
+                                                <input class="form-control" type="text" name="full_name" placeholder="Abay Kunanbayev">
+                                                <label>
+                                                    <h6 style="color: gray">Input your full name</h6>
+                                                </label>
+                                                <br>
+                                                <label>
+                                                    <h5>IIN</h5>
+                                                </label>
+                                                <input class="form-control" type="number" name="email" placeholder="000 906 500 721">
+                                                <label>
+                                                    <h6 style="color: gray">Input your email</h6>
+                                                </label>
+                                                <br>
+
+                                                <label>
+                                                    <h5>Bank card</h5>
+                                                </label>
+                                                <input class="form-control" type="number" name="email" placeholder="1234 5678 9012 3456">
+                                                <label>
+                                                    <h6 style="color: gray">Input your email</h6>
+                                                </label>
+                                                <br>
+
+                                                <label>
+                                                    <h5>IBAN</h5>
+                                                </label>
+                                                <input class="form-control" type="number" name="email" placeholder="KZ091234567890123456">
+                                                <label>
+                                                    <h6 style="color: gray">Input your email</h6>
+                                                </label>
+                                                <br>
+
+
+                                                <label>
+                                                    <h5>Birthdate</h5>
+                                                </label>
+                                                <input class="form-control" type="date" name="birth_date" placeholder="06.09.2000">
+                                                <label>
+                                                    <h6 style="color: gray">Input your birthdate</h6>
+                                                </label>
+                                                <br>
+
+
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel2">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Do you really want to delete a user?
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-danger">DELETE</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div>
+
+</div>
+
+<div>
+
+</div>
+
+<br>
+<footer class="page-footer font-small pt-5">
+    <div class="footer-copyright text-center py-3" style="color: whitesmoke;background-color: black">© 2020 Copyright:
+        <a href="https://mdbootstrap.com/"> balykbank.com</a>
+    </div>
+</footer>
+
+
+</body>
+</html>
